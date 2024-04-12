@@ -4,8 +4,10 @@ const Login = (login) => {
     const {setUsername} = login;
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    
     const handleChange = (event) => {
-        setUsername(email);                                             
+        setUsername(email);
+        setPassword(password);                    
     };
     const handleEmailChange = (event) => {
         setEmail(event.target.value);
